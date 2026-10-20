@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="rlBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080E1C" />
+      <stop offset="100%" stop-color="#111B30" />
+    </linearGradient>
+    <linearGradient id="rlEmerald" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="borderRl" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="50%" stop-color="#10B981" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .live-pulse { animation: livePulse 2s ease-in-out infinite; }
+    @keyframes livePulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.3; transform: scale(0.85); } }
+  </style>
+
+  <rect x="1" y="1" width="898" height="238" rx="16" fill="url(#rlBg)" stroke="url(#borderRl)" stroke-width="1.5" />
+
+  <!-- Left Visual Accent: Fashion Bag / Cart Motif -->
+  <g transform="translate(35, 30)">
+    <rect width="180" height="115" rx="10" fill="#060912" stroke="#10B981" stroke-width="1.5" />
+    <!-- Hanger / Bag Icon -->
+    <path d="M 60 45 Q 90 20 120 45 L 140 100 L 40 100 Z" fill="none" stroke="#10B981" stroke-width="1.8" />
+    <circle cx="90" cy="55" r="4" fill="#10B981" />
+    <text x="90" y="80" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', monospace" font-size="10" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">ROOT &amp; LOOM</text>
+    <text x="90" y="94" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="8" font-weight="700" fill="#A7F3D0" text-anchor="middle">COMMERCE ENGINE</text>
+    
+    <g transform="translate(18, 130)">
+      <rect width="144" height="26" rx="6" fill="#0C152B" stroke="#334155" stroke-width="1" />
+      <circle cx="16" cy="13" r="3.5" fill="#10B981" class="live-pulse" />
+      <text x="28" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', monospace" font-size="9" font-weight="700" fill="#34D399">RAZORPAY INTEGRATED</text>
+    </g>
+  </g>
+
+  <!-- Content Group -->
+  <g transform="translate(255, 34)">
+    <g>
+      <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" font-weight="900" fill="#FFFFFF">
+        Root &amp; Loom — Luxury Apparel Commerce Platform
+      </text>
+      <!-- Live Status Pill -->
+      <g transform="translate(500, -18)">
+        <rect width="95" height="22" rx="11" fill="#064E3B" stroke="#059669" stroke-width="1" />
+        <circle cx="12" cy="11" r="3" fill="#34D399" class="live-pulse" />
+        <text x="22" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9.5" font-weight="800" fill="#A7F3D0" letter-spacing="0.5">LIVE DEMO</text>
+      </g>
+    </g>
+
+    <text x="0" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', monospace" font-size="11" font-weight="700" fill="#10B981" letter-spacing="1">
+      FULLSTACK · SUSTAINABLE COMMERCE · MEMBERSHIP-AWARE CHECKOUT
+    </text>
+
+    <text x="0" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12.5" font-weight="500" fill="#CBD5E1">
+      Digital-first conscious apparel commerce platform handling limited-edition product drops,
+    </text>
+    <text x="0" y="72" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12.5" font-weight="500" fill="#CBD5E1">
+      member-only discount rules, fast mobile experience, and seamless UPI / card checkout via Razorpay.
+    </text>
+    <text x="0" y="92" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12.5" font-weight="500" fill="#CBD5E1">
+      Powered by Supabase cloud database with instant inventory state synchronization.
+    </text>
+
+    <!-- Tech Stack Pill Row -->
+    <g transform="translate(0, 116)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', monospace" font-size="10" font-weight="700">
+      <g transform="translate(0, 0)">
+        <rect width="80" height="24" rx="6" fill="#0C152B" stroke="#334155" stroke-width="1" />
+        <text x="40" y="16" fill="#38BDF8" text-anchor="middle">Next.js</text>
+      </g>
+      <g transform="translate(88, 0)">
+        <rect width="90" height="24" rx="6" fill="#0C152B" stroke="#334155" stroke-width="1" />
+        <text x="45" y="16" fill="#38BDF8" text-anchor="middle">Supabase</text>
+      </g>
+      <g transform="translate(186, 0)">
+        <rect width="90" height="24" rx="6" fill="#0C152B" stroke="#334155" stroke-width="1" />
+        <text x="45" y="16" fill="#38BDF8" text-anchor="middle">Razorpay</text>
+      </g>
+      <g transform="translate(284, 0)">
+        <rect width="105" height="24" rx="6" fill="#0C152B" stroke="#334155" stroke-width="1" />
+        <text x="52" y="16" fill="#38BDF8" text-anchor="middle">Tailwind CSS</text>
+      </g>
+      <g transform="translate(397, 0)">
+        <rect width="80" height="24" rx="6" fill="#0C152B" stroke="#334155" stroke-width="1" />
+        <text x="40" y="16" fill="#38BDF8" text-anchor="middle">Vercel</text>
+      </g>
+    </g>
+
+    <text x="0" y="165" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', monospace" font-size="11" font-weight="700" fill="#10B981">
+      URL: https://rootloom.in/ →
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 90" width="100%" height="100%">
+  <defs>
+    <linearGradient id="secGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#080F1E" />
+      <stop offset="60%" stop-color="#0D1B36" />
+      <stop offset="100%" stop-color="#080F1E" />
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="30%" stop-color="#19D3FF" stop-opacity="0.6" />
+      <stop offset="70%" stop-color="#E62F30" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .pulse-dot { animation: pulseDot 2s ease-in-out infinite; }
+    .flow-dash { stroke-dasharray: 6 12; animation: dashMove 15s linear infinite; }
+    @keyframes pulseDot { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(0.8); } }
+    @keyframes dashMove { to { stroke-dashoffset: -200; } }
+  </style>
+
+  <rect x="1" y="1" width="998" height="88" rx="14" fill="url(#secGrad)" stroke="url(#borderGrad)" stroke-width="1.5" />
+
+  <g transform="translate(24, 25)">
+    <rect width="64" height="40" rx="8" fill="#060A14" stroke="#1E293B" stroke-width="1.2" />
+    <text x="32" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace" font-size="14" font-weight="900" fill="#E62F30" text-anchor="middle" letter-spacing="1">06</text>
+  </g>
+
+  <g transform="translate(108, 38)">
+    <circle cx="-10" cy="-6" r="3.5" fill="#19D3FF" class="pulse-dot" />
+    <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif" font-size="20" font-weight="900" letter-spacing="2.5" fill="url(#textGrad)">
+      TELEMETRY &amp; GITHUB ANALYTICS
+    </text>
+    <text x="0" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace" font-size="11" font-weight="600" letter-spacing="1" fill="#94A3B8">
+      OPEN SOURCE PULSE · ACTIVITY METRICS · REPOSITORY INSIGHTS
+    </text>
+  </g>
+
+  <g stroke="#334155" stroke-width="1" fill="none" opacity="0.7">
+    <path d="M 640 45 L 750 45 L 775 30 L 960 30" class="flow-dash" stroke="#19D3FF" />
+    <path d="M 720 58 L 810 58 L 835 70 L 960 70" stroke="#1E293B" />
+    <circle cx="960" cy="30" r="3" fill="#19D3FF" />
+    <circle cx="960" cy="70" r="2.5" fill="#E62F30" />
+  </g>
+</svg>

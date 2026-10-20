@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 180" width="100%" height="100%">
+  <defs>
+    <linearGradient id="footerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050812" />
+      <stop offset="50%" stop-color="#080F20" />
+      <stop offset="100%" stop-color="#050812" />
+    </linearGradient>
+    <linearGradient id="cyanLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#19D3FF" stop-opacity="0" />
+      <stop offset="50%" stop-color="#19D3FF" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#E62F30" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="logoKGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#19D3FF" />
+      <stop offset="100%" stop-color="#168BFF" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .footer-dot { animation: dotBlink 2.5s ease-in-out infinite; }
+    @keyframes dotBlink { 0%, 100% { opacity: 0.9; } 50% { opacity: 0.3; } }
+  </style>
+
+  <!-- Background -->
+  <rect x="1" y="1" width="1098" height="178" rx="16" fill="url(#footerBg)" stroke="#1E293B" stroke-width="1.2" />
+
+  <!-- Top Accent Light Line -->
+  <line x1="100" y1="2" x2="1000" y2="2" stroke="url(#cyanLine)" stroke-width="2" />
+
+  <!-- Left: Stylized Logo & Title -->
+  <g transform="translate(45, 45)">
+    <!-- Small Logo Box -->
+    <rect width="50" height="50" rx="12" fill="#0C152B" stroke="#1E293B" stroke-width="1.2" />
+    <g transform="translate(10, 8) scale(0.1)" fill="url(#logoKGrad)">
+      <path d="M 67 0 L 51 15 L 46 20 L 0 64 L 0 184 L 67 118 Z" />
+      <path d="M 281 41 L 167 40 L 148 55 L 1 202 L 0 316 Z" />
+      <path d="M 86 255 L 126 296 L 157 327 L 285 327 L 228 267 L 154 191 Z" />
+    </g>
+
+    <!-- Brand Text -->
+    <text x="65" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="20" font-weight="900" letter-spacing="2" fill="#FFFFFF">KORVITH</text>
+    <text x="65" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', monospace" font-size="9" font-weight="700" letter-spacing="4" fill="#94A3B8">TECHNOLOGIES</text>
+  </g>
+
+  <!-- Center Tagline -->
+  <g transform="translate(550, 68)" text-anchor="middle">
+    <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#E2E8F0" letter-spacing="0.5">
+      Building useful digital experiences through engineering and thoughtful technology.
+    </text>
+    <text x="0" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="500" fill="#64748B">
+      Websites · Custom Software · AI Integration · Business Automation
+    </text>
+  </g>
+
+  <!-- Right: Location & Status -->
+  <g transform="translate(900, 52)">
+    <rect width="150" height="40" rx="8" fill="#0C152B" stroke="#1E293B" stroke-width="1" />
+    <circle cx="16" cy="20" r="3.5" fill="#10B981" class="footer-dot" />
+    <text x="26" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9.5" font-weight="700" fill="#FFFFFF">DEHRADUN, INDIA</text>
+    <text x="26" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', monospace" font-size="8.5" font-weight="600" fill="#94A3B8">REMOTE NATIONWIDE</text>
+  </g>
+
+  <!-- Bottom Copyright & Coordinates Strip -->
+  <g transform="translate(550, 142)" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', monospace" font-size="10" font-weight="600" fill="#475569" letter-spacing="1">
+    <text>© 2026 KORVITH TECHNOLOGIES · OPERATING DIGITALLY ACROSS INDIA · ALL RIGHTS RESERVED</text>
+  </g>
+</svg>
